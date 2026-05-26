@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Default DARK theme (UKGE Signature Tech Warmth) */
+  --background: #101416;
+  --on-background: #f1f5f9;
+  --primary: #ffb59d;
+  --on-primary: #3d1d11;
+  --primary-container: #ff6b35;
+  --on-primary-container: #ffffff;
+  
+  --secondary: #5dd9d0;
+  --secondary-container: #00a29a;
+  --on-secondary-container: #e6fcfb;
+
+  --surface-container-lowest: #0b0f10;
+  --surface-container-low: #181c1e;
+  --surface-container: #1c2022;
+  --surface-container-high: #262b2c;
+  --surface-container-highest: #313537;
+  
+  --outline-variant: #313537;
+  
+  --on-surface: #f1f5f9;
+  --on-surface-variant: #94a3b8;
+}
+
+:root.light {
+  /* LIGHT theme (UKGE Modern Fresh Tabletop) */
+  --background: #f8fafc;
+  --on-background: #0f172a;
+  --primary: #ff6b35;
+  --on-primary: #ffffff;
+  --primary-container: #ffece6;
+  --on-primary-container: #8c2500;
+  
+  --secondary: #008780;
+  --secondary-container: #e6fcfb;
+  --on-secondary-container: #005c57;
+
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f1f5f9;
+  --surface-container: #e2e8f0;
+  --surface-container-high: #cbd5e1;
+  --surface-container-highest: #94a3b8;
+  
+  --outline-variant: #cbd5e1;
+  
+  --on-surface: #0f172a;
+  --on-surface-variant: #475569;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Dynamically bind colors to the CSS variables */
+  --color-background: var(--background);
+  --color-on-background: var(--on-background);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  
+  --color-outline-variant: var(--outline-variant);
+
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+}
+
+/* Custom scrollbar hides */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

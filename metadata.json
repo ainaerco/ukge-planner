@@ -1,0 +1,6 @@
+{
+  "name": "UKGE 2026 Play List",
+  "description": "An offline-first, mobile-friendly personal planning dashboard and companion for UK Games Expo 2026, equipped with interactive hall maps, curated BoardGameGeek links, and real box art illustrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
